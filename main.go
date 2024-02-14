@@ -184,10 +184,8 @@ func main() {
 		fmt.Println("Usage: go run main.go <actorFrom> <actorTo>")
 		return
 	}
-
 	fr := args[0]
 	to := args[1]
-
 	treeDepth := 3
 	_, degree, _, _ := separation(fr, to, treeDepth, 0, []map[string]interface{}{}, checkList, 0)
 	fmt.Printf("Degree of Separation - %d\n", degree)
